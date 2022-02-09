@@ -1,4 +1,4 @@
-def get_ixes(a, b, parts):
+def get_vars(a, b, parts):
     ixes = []
     first_elem = round((b - a) / parts + a, 2)
 
@@ -9,3 +9,8 @@ def get_ixes(a, b, parts):
         ixes.append(round(el, 2))
     
     return ixes
+
+def eval_function(function, var):
+    return round(eval(function.format(var)), 6)
+
+
